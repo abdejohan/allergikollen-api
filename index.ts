@@ -1,7 +1,8 @@
 import express, { Request, Response, Application } from 'express';
 import dotenv from 'dotenv';
 import { PrismaClient } from '@prisma/client';
-import products from './products';
+import products from './mockups/products';
+import allergens from './mockups/allergens';
 
 const prisma = new PrismaClient();
 // For env File
