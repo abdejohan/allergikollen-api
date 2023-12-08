@@ -7,6 +7,7 @@ const allAllergens = [
   'Tree Nuts',
   'Fish',
   'Shellfish',
+  'Socker',
 ];
 
 export default allAllergens;
