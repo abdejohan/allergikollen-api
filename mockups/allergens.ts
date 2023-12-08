@@ -1,4 +1,4 @@
-const allergens = [
+const allAllergens = [
   { label: 'Peanuts', value: 'peanuts' },
   { label: 'Milk', value: 'milk' },
   { label: 'Eggs', value: 'eggs' },
@@ -9,4 +9,4 @@ const allergens = [
   { label: 'Shellfish', value: 'shellfish' },
 ];
 
-export default allergens;
+export default allAllergens;
