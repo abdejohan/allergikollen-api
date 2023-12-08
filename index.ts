@@ -15,6 +15,10 @@ app.get('/api', (req: Request, res: Response) => {
   res.send('Welcome to Express & TypeScript Server');
 });
 
+app.get('/api/allergens', (req: Request, res: Response) => {
+  res.json(allergens);
+});
+
 app.get('/api/products/:gtin', async (req: Request, res: Response) => {
   const { gtin } = req.params;
   const foundProduct = products.find((product) => product.gtin.includes(gtin));
