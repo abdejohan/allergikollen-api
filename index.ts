@@ -43,6 +43,18 @@ app.patch(
   },
 );
 
+app.get('/api/users/:userId', async (req: Request, res: Response) => {
+  try {
+    const { userId } = req.params;
+    const user = await prisma.user.findUnique({
+      where: { id: Number(userId) },
+    });
+    res.json(user);
+  } catch (error) {
+    res.status(404).send();
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is Fire at http://localhost:${port}`);
 });
