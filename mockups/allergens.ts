@@ -8,6 +8,7 @@ const allAllergens = [
   'Fish',
   'Shellfish',
   'Socker',
+  'havre',
 ];
 
 export default allAllergens;
